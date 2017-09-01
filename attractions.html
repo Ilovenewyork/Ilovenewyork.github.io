@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+
+<title>New York: Attractions</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+<style>
+
+    body{
+        font-family: 'Poiret One', cursive;
+        background-color: #777;
+        background-image: url("liberty.jpg");
+        background-size: 100%;
+       }
+
+.b{
+	display: none;
+    }
+
+.navbar{
+    width:100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+#menu{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid white;
+    line-height: 80px;
+    left: 5px;
+    color: white;
+}
+
+.nav{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    display: none;
+    position: relative;
+    border: 1px solid white;
+    line-height: 80px;
+    color: white;
+
+}
+
+.c{
+	font-family: 'Poiret One', cursive;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+<center>
+<div id = "menu" onclick="toggleMenu()"><p> &#x2630 </p></div>
+<div class ="nav" id="nav1"> <a href="index.html" class = "dab" style="color:white">Home</a> </div>
+<div class ="nav" id="nav2"> <a href="dining.html" class = "dab" style="color:white">Dining</a> </div>
+<div class ="nav" id="nav3"> <a href="kids.html" class = "dab" style="color:white">Kids</a>
+</center>
+</div>
+</div>
+
+
+<div id = "a"><p>With so much to do making a decison is difficult in the big apple so lets get to it</p></div></div>
+
+
+
+<span id = "c"  class = "c"><h1>FREEDOM TOWER</h1>
+	<p>The Freedom tower more commonly known as One World Trade Center is the TALLEST  building in the western hemisphere and the 6th tallest in the world. There are great views from the 101st floor which is an indoor observatory which you can see most of New York from it also has a few restaurants but is mainly an office building.</p>
+<img src="http://www.skyscraper.org/EXHIBITIONS/PERMANENT/Pics/ft_sm.jpg">
+<button onclick="myFunction()">show/hide map</button>
+<span class = "b" id = "b"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.228108366125!2d-74.01534963490471!3d40.71299467933174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2sOne+World+Trade+Center!5e0!3m2!1sen!2sus!4v1504142193215" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span></span>
+
+
+
+<span class = "c"><h1>Statue of Liberty</h1><p>The Statue of Liberty is an iconic statue situated on Liberty Island gifted by the French as a symbol of America's independence from Great Britain</p></span><button onclick="myFunc()">show/hide map</button> <img src="http://images2.sina.com/english/life/p/2009/0610/U99P200T1D247571F8DT20090610204107.jpg">   <span class = "b" id = "d"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.306387423319!2d-74.04668908490555!3d40.6892493793343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue+of+Liberty+National+Monument!5e0!3m2!1sen!2sus!4v1504183480088" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span>
+
+
+
+<span class = "c"><h1>Central Park</h1><p>A sprawling urban park, in fact it is the most visited park in the United States of America.Boasting a zoo ,carousel(one of the largest in the country),boat rentals,ballfeids and a resevoir it is an oasis of green in the middle  of a bustling city</p></span><button onclick="mycen()">show/hide map</button><span id = "e" class = "b"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.052284850751!2d-73.96754378490233!3d40.78286467932428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral+Park!5e0!3m2!1sen!2sus!4v1504189336239" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span><img src="./park.jpg">
+
+</body>
+<script> 
+
+function myFunction() {
+    var x = document.getElementById('b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+
+
+function myFunc() {
+    var x = document.getElementById('d');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+function mycen() {
+    var x = document.getElementById('e');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+function toggleMenu(){
+    
+    if(document.getElementById("nav1").style.display === "none"){
+    document.getElementById("nav1").style.display = "inline-block";
+    document.getElementById("nav2").style.display = "inline-block";
+    document.getElementById("nav3").style.display = "inline-block";
+    document.getElementById("menu").innerHTML = "&#x274C";
+    }
+
+    else{
+        document.getElementById("nav1").style.display = "none";
+        document.getElementById("nav2").style.display = "none";
+        document.getElementById("nav3").style.display = "none";
+        document.getElementById("menu").innerHTML = "&#x2630";
+    }
+}
+
+
+</script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>New York: Dining</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+<style>
+.a{
+	display: none;
+}
+body{
+	font-family: 'Poiret One', cursive;
+    background-color: #777;
+}
+
+.navbar{
+    width:100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#menu{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid white;
+    line-height: 80px;
+    left: 5px;
+}
+
+.nav{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    display: none;
+    position: relative;
+    border: 1px solid white;
+    line-height: 80px;
+
+}
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+<font color = "white">
+<center>
+<div id = "menu" onclick="toggleMenu()"><p> &#x2630 </p></div>
+<div class ="nav" id="nav1"> <a href="index.html" class = "dab" style="color:white">Home</a> </div>
+<div class ="nav" id="nav2"> <a href="attractions.html" class = "dab" style="color:white">Attractions</a> </div>
+<div class ="nav" id="nav3"> <a href="kids.html" class = "dab" style="color:white">Kids</a>
+</center>
+</font> 
+</div>
+</div>
+
+
+<h1>Dining</h1>
+
+ <h1>Ninja New York</h1>
+ <p>traditional Japanese food on a whole new level...Ninja Style</p>
+ <img src="http://i.dailymail.co.uk/i/pix/2011/12/24/article-2078318-0F4495CF00000578-273_634x396.jpg">                                                                                                         
+<button onclick="myFunction()">info</button>
+
+  <span id = "a" class = "a">
+Address: 25 Hudson St, New York, NY 10013<br>
+Menu: <a href="ninjanewyork.com">"ninjanewyork.com"</a><br>
+Reservations:<a href="opentable.com">"opentable.com"</a> <br>
+Phone:(212) 274-8500
+</span>
+
+
+
+
+<h1>Indian Accent</h1>
+<p>High-end Indian restaurant in Le Parker Meridien offering creative prix fixe menus and wine pairings.</p>
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/a0/b6/13/indian-accent.jpg">
+<button onclick="myFunctio()">info</button>
+
+<span id = 'b' class = 'a'>
+Address: 123 W 56th St, New York, NY 10019<br>
+Menu:<a href="places.singleplatform.com">"click here"</a> <br>
+Reservations: <a href="opentable.com">"opentable"</a><br>
+Phone: (212) 842-8070</span>
+</body>
+<script>
+function myFunction() {
+    var x = document.getElementById('a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+function myFunctio() {
+    var x = document.getElementById('b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function toggleMenu(){
+    
+    if(document.getElementById("nav1").style.display === "none"){
+    document.getElementById("nav1").style.display = "inline-block";
+    document.getElementById("nav2").style.display = "inline-block";
+    document.getElementById("nav3").style.display = "inline-block";
+    document.getElementById("menu").innerHTML = "&#x274C";
+    }
+
+    else{
+        document.getElementById("nav1").style.display = "none";
+        document.getElementById("nav2").style.display = "none";
+        document.getElementById("nav3").style.display = "none";
+        document.getElementById("menu").innerHTML = "&#x2630";
+    }
+}
+
+</script>
+</html>

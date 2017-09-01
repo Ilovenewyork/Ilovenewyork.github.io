@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>New York: Kids</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+
+<style>
+
+body{
+	
+    font-family: 'Poiret One', cursive;
+    background-color: #777;
+}
+
+.a{
+	display: none;
+}
+
+.navbar{
+    width:100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#menu{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid white;
+    line-height: 80px;
+    left: 5px;
+}
+
+.nav{
+    width: 20%;
+    height: 80px;
+    margin: 10px;
+    display: none;
+    position: relative;
+    border: 1px solid white;
+    line-height: 80px;
+    color: white;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<font color = "white">
+<center>
+<div id = "menu" onclick="toggleMenu()"><p> &#x2630 </p></div>
+<div class ="nav" id="nav3"> <a href="index.html" class = "dab" style="color:white">Home</a></div>
+<div class ="nav" id="nav1"> <a href="attractions.html" class = "dab" style="color:white">Attractions</a> </div>
+<div class ="nav" id="nav2"> <a href="dining.html" class = "dab" style="color:white">Dining</a> </div>
+</center>
+</font> 
+</div>
+</div>
+
+<h1>Kids</h1>
+
+
+
+
+
+<h1>Dylans Candy Bar</h1>
+
+<p>candy heaven, that's all I can say</p>
+
+<button onclick="myFunction()">info</button>
+<span id = "a" class="a">
+STORE HOURS
+Mon-Thur: 10am - 9pm
+Fri and Sat: 10am - 11pm
+Sunday: 11am - 9pm
+LOCATION
+1011 Third Ave (at 60th St.)
+New York, NY 10065
+(646) 735-0078 
+Subway: N, Q, R, 4, 5, 6
+</span>
+
+<img src="https://s3-media1.fl.yelpcdn.com/bphoto/SNkFOdaP1rP0ADb2udAEWQ/ls.jpg">
+
+<h1>Chelsea Piers</h1>
+
+<p>a sports complex with everything you could imagine, from ice skating to soccer</p>
+
+<button onclick="myFunctio()">info</button>
+<span id = "b" class = "a">
+Address: 62 Chelsea Piers, New York, NY 10011
+Phone: (212) 336-6666
+
+</span>
+
+<img src="https://www.bowlmor.com/sites/default/files/Chelsea%20Piers740x404.jpg">
+</body>
+<script>
+function myFunction() {
+    var x = document.getElementById('a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+function myFunctio() {
+    var x = document.getElementById('b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function toggleMenu(){
+    
+    if(document.getElementById("nav1").style.display === "none"){
+    document.getElementById("nav1").style.display = "inline-block";
+    document.getElementById("nav2").style.display = "inline-block";
+    document.getElementById("nav3").style.display = "inline-block";
+    document.getElementById("menu").innerHTML = "&#x274C";
+    }
+
+    else{
+        document.getElementById("nav1").style.display = "none";
+        document.getElementById("nav2").style.display = "none";
+        document.getElementById("nav3").style.display = "none";
+        document.getElementById("menu").innerHTML = "&#x2630";
+    }
+}
+</script>
+</html>
