@@ -88,13 +88,17 @@ Reservations: <a href="www.opentable.com">"opentable"</a><br>
 Phone: (212) 842-8070</span>
 	
 <h1>Shake Shack</h1>
-<p>many convenient locations across the city. Best burgers,shakes,etc.</p>
+<p>many convenient locations across the city. Best burgers,shakes,etc. Walk in and best fast food by far.</p>
 
 	<a href="https://www.tripadvisor.com/LocationPhotoDirectLink-g60763-d1862360-i229101583-Shake_Shack_Theater_District-New_York
 _City_New_York.html#229101583"><img alt="" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/a7/d0/0f/shake-shack-in-the
 -theater.jpg"/></a><br/>This photo of Shake Shack Theater District is courtesy of TripAdvisor
 	
-	
+<button onclick"Shakeshackinfo()">info</button>
+<span id="c" class="a">
+Phone Number:+1 646-435-0135<br>
+Address:691 8th Ave, New York City, NY 10036-7107<br>
+click on the photo for more info and comments</span>
 </body>
 <script>
 function myFunction() {
@@ -107,6 +111,15 @@ function myFunction() {
 }
 
 
+function Shakeshackinfo() {
+    var x = document.getElementById('c');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+	
 function myFunctio() {
     var x = document.getElementById('b');
     if (x.style.display === 'none') {
