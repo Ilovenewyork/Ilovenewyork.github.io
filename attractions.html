@@ -52,6 +52,8 @@
 .c{
 	font-family: 'Poiret One', cursive;
 }
+#timer{
+	font family: "Comic Sans MS", cursive, sans-serif
 </style>
 
 </head>
@@ -95,8 +97,9 @@ function googleTranslateElementInit() {
 <span class = "c"><h1> Times square</h1><p> Sometimes called the crossroads of the world, it is famed for its giant
 electric billboards and a ball dropping down three feet from a pole on top of a building on New Years Day, but if you aren't a fan, there's always some dark alley to hide in.</p>
 <img src="http://static5.businessinsider.com/image/58dbdc86dd0895d16f8b4700-480/times-square-2.jpg">
-	
+	<h3 id="timer">Time is ticking</h3>
 </span>
+
 <button onclick="myTimes()">show/hide map</button>  <span class = "b" id = "f"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142293795014!2d-73.98731968497984!3d40.75889497932682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1sen!2sus!4v1513383331769" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span> 
 
 
@@ -189,7 +192,7 @@ hrsLeft = Math.floor(e_hrsLeft);
 
 minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
 
-document.write("There are only<BR> <H4>" + daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes left </H4> Until December 31st 2018<P>");
 
+document.getElementById("timer").innerHTML = ("There are only<BR> <H4>" + daysLeft + " days " + hrsLeft +" hours and " + minsLeft + " minutes left </H4> Until December 31st 2018<P>");
 </script>
 </html>
