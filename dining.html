@@ -114,6 +114,9 @@ click on the photo for more info and comments</span>
 	<p> Carmines is a family style restaurant that serves traditional Italian food</p>
 	<img src="http://images.nymag.com/listings/restaurant/maincarminesb.jpg">
 	<button onclick"Carminesinfo()">info</button>
+	<span id="d" class="a">
+		testing
+	</span>
 </body>
 <script>
 function myFunction() {
@@ -143,7 +146,14 @@ function myFunctio() {
         x.style.display = 'none';
     }
 }
-
+function Carminesinfo() {
+    var x = document.getElementById('d');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
 function toggleMenu(){
     
     if(document.getElementById("nav1").style.display === "none"){
